@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>基于cas3.5.0 搭建的客户端</display-name>
+	
+	<!-- 配置springmvc的监听器 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- springmvc 的配置信息 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring.xml</param-value>
+	</context-param>
+	
+	<!-- 配置单点登出监听器 -->
+	<listener>
+		<listener-class>org.jasig.cas.client.session.SingleSignOutHttpSessionListener</listener-class>
+	</listener>
+	
+	
+	<!-- 单点登录的过滤器 -->
+	<filter>
+		<filter-name>CAS Single Sign Out Filter</filter-name>
+		<filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+		<!-- 配置单点登录的地址 -->
+		<init-param>
+			<param-name>casServerUrlPrefix</param-name>
+			<param-value>https://yellowcong.com:9000</param-value>
+		</init-param>
+	</filter>
+	<!-- 单点登录验证过滤器 -->
+	<filter>
+		<filter-name>CAS Validation Filter</filter-name>
+		<filter-class>org.jasig.cas.client.validation.Cas30ProxyReceivingTicketValidationFilter</filter-class>
+		<!-- 配置单点登录的地址 -->
+		<init-param>
+			<param-name>casServerUrlPrefix</param-name>
+			<param-value>https://yellowcong.com:9000</param-value>
+		</init-param>
+		<!-- 这个服务的地址 -->
+		<init-param>
+			<param-name>serverName</param-name>
+			<param-value>http://yellowcong.com:8080/cas-client-maven</param-value>
+		</init-param>
+		<init-param>
+			<param-name>useSession</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>
+		<filter-class>org.jasig.cas.client.util.HttpServletRequestWrapperFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<filter-class>org.jasig.cas.client.authentication.AuthenticationFilter</filter-class>
+		<!-- 配置单点登录的地址 -->
+		<init-param>
+			<param-name>casServerLoginUrl</param-name>
+			<param-value>https://yellowcong.com:9000</param-value>
+		</init-param>
+		<!-- 这个服务的地址 -->
+		<init-param>
+			<param-name>serverName</param-name>
+			<param-value>http://yellowcong.com:8080/cas-client-maven</param-value>
+		</init-param>
+		<!-- 不需要匹配的类 -->
+		<init-param>
+			<param-name>ignoreUrlPatternType</param-name>
+			<param-value>com.yellowcong.auth.SimpleUrlPatternMatcherStrategy</param-value>
+		</init-param>
+		<!-- 不需要管的正则pattern -->
+		<init-param>
+			<param-name>ignorePattern</param-name>
+			<param-value>.*</param-value>
+		</init-param>
+		
+	</filter>
+
+	<!-- 登录验证器 -->
+	<filter-mapping>
+		<filter-name>CAS Single Sign Out Filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 验证过滤器 -->
+	<filter-mapping>
+		<filter-name>CAS Validation Filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 授权过滤器 -->
+	<filter-mapping>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- 配置springmvc的过滤器 ,过滤器都配置到后面，这样好搞事情啊，你说呢-->
+	<servlet>
+		<servlet-name>spring-mvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<description>spring mvc 配置文件</description>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>spring-mvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>

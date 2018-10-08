@@ -1,0 +1,280 @@
+[32m2018-02-01 14:05:19,705 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Configuration directory [\etc\cas\config] is not a directory or cannot be found at the specific path>[m
+[32m2018-02-01 14:05:19,761 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Found and loaded [0] setting(s) from [\etc\cas\config]>[m
+[32m2018-02-01 14:05:19,768 INFO [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration] - <Located property source: PropertiesPropertySource {name='standaloneCasConfigService'}>[m
+[32m2018-02-01 14:05:19,795 INFO [org.apereo.cas.web.CasWebApplication] - <The following profiles are active: standalone>[m
+[32m2018-02-01 14:05:19,964 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Refreshing CasWebApplicationContext>[m
+[32m2018-02-01 14:05:49,973 INFO [org.apereo.cas.configuration.support.Beans] - <Ticket registry encryption/signing is turned off. This MAY NOT be safe in a clustered production environment. Consider using other choices to handle encryption, signing and verification of ticket registry tickets, and verify the chosen ticket registry does support this behavior.>[m
+[32m2018-02-01 14:08:08,306 INFO [org.apereo.cas.support.events.listener.CasConfigurationEventListener] - <Refreshing CAS configuration. Stand by...>[m
+[33m2018-02-01 14:08:15,976 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for encryption is not defined for [Ticket-granting Cookie]; CAS will attempt to auto-generate the encryption key>[m
+[33m2018-02-01 14:08:16,028 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated encryption key [DrRF8nHHhcK7wxL_AB-Baykyv-bXTE0NJ-eLKH1YPMI] of size [256] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.encryption.key].>[m
+[33m2018-02-01 14:08:16,038 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for signing is not defined for [Ticket-granting Cookie]. CAS will attempt to auto-generate the signing key>[m
+[33m2018-02-01 14:08:16,038 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated signing key [Bk02AJzSdu23Ze6jj9vo1w1z_nrYThf4ZQ_4IJo9wX0KK2vaMz9CCOZkZ344xmuVQgDC4cIBz4IyGOfGXGmW7g] of size [512] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.signing.key].>[m
+[33m2018-02-01 14:08:20,265 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for signing is not defined under [cas.webflow.crypto.signing.key]. CAS will attempt to auto-generate the signing key>[m
+[33m2018-02-01 14:08:20,266 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated signing key [uDUJsWnbO2XqRtIL0M8DJ-zeGLFqPzuPAdXdokzYPs0LSIKU3zqaB85NwrkaCOPvulQ9jXliVvQBeP-IPOTj5Q] of size [512]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.signing.key].>[m
+[33m2018-02-01 14:08:20,266 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for encryption is not defined under [cas.webflow.crypto.encryption.key]. CAS will attempt to auto-generate the encryption key>[m
+[33m2018-02-01 14:08:20,281 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated encryption key [hgIgyuTf1PnLaos1zi7o7Q] of size [16]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.encryption.key].>[m
+[32m2018-02-01 14:08:21,570 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <[36m>[m
+[32m2018-02-01 14:08:21,575 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <
+
+  ____    _____      _      ____   __   __
+ |  _ \  | ____|    / \    |  _ \  \ \ / /
+ | |_) | |  _|     / _ \   | | | |  \ V / 
+ |  _ <  | |___   / ___ \  | |_| |   | |  
+ |_| \_\ |_____| /_/   \_\ |____/    |_|  
+                                          
+>[m
+[32m2018-02-01 14:08:21,576 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <[0m>[m
+[32m2018-02-01 14:08:21,576 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <Ready to process requests @ [2018-02-01T06:08:21.569Z]>[m
+[32m2018-02-01 14:08:21,583 INFO [org.apereo.cas.web.CasWebApplication] - <Started CasWebApplication in 202.473 seconds (JVM running for 218.453)>[m
+[32m2018-02-01 14:08:51,154 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 14:10:42,711 INFO [org.apereo.cas.web.flow.InitialFlowSetupAction] - <Setting path for cookies for warn cookie generator to: [/] >[m
+[32m2018-02-01 14:10:42,711 INFO [org.apereo.cas.web.flow.InitialFlowSetupAction] - <Setting path for cookies for warn cookie generator to: [/] >[m
+[32m2018-02-01 14:10:42,872 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:10:42 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:10:42 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:10:42,872 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:10:42 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:10:42 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:10:51,163 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 14:10:52,473 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:10:52 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:10:52 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:10:52,473 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:10:52 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:10:52 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:12:51,166 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 14:13:05,955 INFO [org.apereo.cas.authentication.PolicyBasedAuthenticationManager] - <Authenticated principal [f] with attributes [{}] via credentials [[f]].>[m
+[32m2018-02-01 14:13:05,962 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: f
+WHAT: Supplied credentials: [f]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:05 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:05,962 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: f
+WHAT: Supplied credentials: [f]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:05 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:06,116 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: f
+WHAT: TGT-*********rbfHZDt5cM-8T1wluioiSP6IFzm9B3Imu49lU_b5KtlB9lvuzN-_uYDWK2iaQQVM-Z_-PC
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:06 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:06,116 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: f
+WHAT: TGT-*********rbfHZDt5cM-8T1wluioiSP6IFzm9B3Imu49lU_b5KtlB9lvuzN-_uYDWK2iaQQVM-Z_-PC
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:06 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:09,113 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: f
+WHAT: TGT-*********rbfHZDt5cM-8T1wluioiSP6IFzm9B3Imu49lU_b5KtlB9lvuzN-_uYDWK2iaQQVM-Z_-PC
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:09 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:09,113 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: f
+WHAT: TGT-*********rbfHZDt5cM-8T1wluioiSP6IFzm9B3Imu49lU_b5KtlB9lvuzN-_uYDWK2iaQQVM-Z_-PC
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:09 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:13,260 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:13:13 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:13 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:13,260 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:13:13 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:13 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:17,448 INFO [org.apereo.cas.authentication.PolicyBasedAuthenticationManager] - <Authenticated principal [fasdfasf] with attributes [{}] via credentials [[fasdfasf]].>[m
+[32m2018-02-01 14:13:17,449 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: fasdfasf
+WHAT: Supplied credentials: [fasdfasf]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:17 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:17,449 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: fasdfasf
+WHAT: Supplied credentials: [fasdfasf]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:17 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:17,451 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: fasdfasf
+WHAT: TGT-***************************************************************fcbqwmzaAA-Z_-PC
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:17 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:17,451 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: fasdfasf
+WHAT: TGT-***************************************************************fcbqwmzaAA-Z_-PC
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:17 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:20,055 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:13:20 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:20 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:20,055 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:13:20 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:20 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:27,345 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:13:27 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:27 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:13:27,345 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: [event=success,timestamp=Thu Feb 01 14:13:27 CST 2018,source=RankedAuthenticationProviderWebflowEventResolver]
+ACTION: AUTHENTICATION_EVENT_TRIGGERED
+APPLICATION: CAS
+WHEN: Thu Feb 01 14:13:27 CST 2018
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>[m
+[32m2018-02-01 14:14:51,169 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 14:16:51,172 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 14:18:51,174 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 14:20:51,177 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 14:22:03,999 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Closing CasWebApplicationContext>[m

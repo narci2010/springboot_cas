@@ -1,0 +1,1 @@
+type=GAUGE, name=jvm.fd.usage, value=NaN

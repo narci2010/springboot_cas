@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+	">
+	
+	<!-- 自动扫描(自动注入) -->
+	<context:annotation-config/>
+	<context:component-scan base-package="com.yellowcong.*"/>
+	
+	<!-- 引入属性文件 -->
+	 <bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<!-- 除了支持配置的properties文件外,还支持系统属性
+		SYSTEM_PROPERTIES_MODE_OVERRIDE   //系统属性可以被覆盖
+		SYSTEM_PROPERTIES_MODE_NEVER  //不检测系统属性
+		SYSTEM_PROPERTIES_MODE_FALLBACK  // 这个是默认的配置
+		-->
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" /> 
+		<!-- 里面配置的properties文件如果找不到的话,就可以忽略找不到的文件 -->
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:application.properties</value>
+			</list>
+		</property>
+	</bean> 
+    
+	<!--导入springmvc和cas的配置-->
+	<import resource="spring-mvc.xml"/>
+	<import resource="spring-cas.xml"/>
+</beans>

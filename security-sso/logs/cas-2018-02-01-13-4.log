@@ -1,0 +1,5 @@
+[32m2018-02-01 13:59:45,364 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Configuration directory [\etc\cas\config] is not a directory or cannot be found at the specific path>[m
+[32m2018-02-01 13:59:45,451 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Found and loaded [0] setting(s) from [\etc\cas\config]>[m
+[32m2018-02-01 13:59:45,459 INFO [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration] - <Located property source: PropertiesPropertySource {name='standaloneCasConfigService'}>[m
+[32m2018-02-01 13:59:45,492 INFO [org.apereo.cas.web.CasWebApplication] - <The following profiles are active: standalone>[m
+[32m2018-02-01 13:59:45,791 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Refreshing CasWebApplicationContext>[m

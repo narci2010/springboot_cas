@@ -1,0 +1,5 @@
+#官网下砸地址
+https://oss.sonatype.org/content/repositories/releases/org/apereo/cas/
+
+#七牛下载地址
+http://yellowcong.qiniudn.com/cas-server-webapp-tomcat-5.2.1.war

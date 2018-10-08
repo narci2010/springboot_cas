@@ -1,0 +1,70 @@
+[32m2018-02-01 14:00:21,792 INFO [org.apereo.cas.configuration.support.Beans] - <Ticket registry encryption/signing is turned off. This MAY NOT be safe in a clustered production environment. Consider using other choices to handle encryption, signing and verification of ticket registry tickets, and verify the chosen ticket registry does support this behavior.>[m
+[32m2018-02-01 14:02:48,750 INFO [org.apereo.cas.support.events.listener.CasConfigurationEventListener] - <Refreshing CAS configuration. Stand by...>[m
+[33m2018-02-01 14:02:55,539 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for encryption is not defined for [Ticket-granting Cookie]; CAS will attempt to auto-generate the encryption key>[m
+[33m2018-02-01 14:02:55,584 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated encryption key [5ra6lSDnsK-tvLqx6oPYQotwB4pzk1dBw786XOvwWUk] of size [256] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.encryption.key].>[m
+[33m2018-02-01 14:02:55,595 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for signing is not defined for [Ticket-granting Cookie]. CAS will attempt to auto-generate the signing key>[m
+[33m2018-02-01 14:02:55,596 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated signing key [XqA_6eRghtNJzZebaoXXiolYpdiK11KcvzYrmn9AVMa-_-SzLjaoZZXpnRnlBqKEit1x1FD-0BiATCVxp9w9Aw] of size [512] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.signing.key].>[m
+[33m2018-02-01 14:02:58,889 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for signing is not defined under [cas.webflow.crypto.signing.key]. CAS will attempt to auto-generate the signing key>[m
+[33m2018-02-01 14:02:58,889 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated signing key [2STC_R5DFm4Kzbtf2qgZnlcECfPQmgnZIu1BprnY--2BcCX39iW9D26t3TG5Iu1i8T_Pl4DGomQjMWn7tIRoCw] of size [512]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.signing.key].>[m
+[33m2018-02-01 14:02:58,890 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for encryption is not defined under [cas.webflow.crypto.encryption.key]. CAS will attempt to auto-generate the encryption key>[m
+[33m2018-02-01 14:02:58,908 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated encryption key [6Bbm7ZSZimbRGEYlE4EufQ] of size [16]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.encryption.key].>[m
+[1;31m2018-02-01 14:02:59,986 ERROR [org.apache.catalina.core.StandardService] - <Failed to start connector [Connector[HTTP/1.1-8445]]>[m
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8445]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-4.3.12.RELEASE.jar!/:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134) ~[spring-boot-1.5.8.RELEASE.jar!/:1.5.8.RELEASE]
+	at org.apereo.cas.web.CasWebApplication.main(CasWebApplication.java:73) ~[cas-server-webapp-init-5.2.1.jar!/:5.2.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[cas.war:?]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[cas.war:?]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[cas.war:?]
+	at org.springframework.boot.loader.WarLauncher.main(WarLauncher.java:59) ~[cas.war:?]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: java.io.IOException: Alias name [yellowcong.com] does not identify a key entry
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:116) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:87) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1146) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	... 20 more
+Caused by: java.io.IOException: Alias name [yellowcong.com] does not identify a key entry
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:225) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:114) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:87) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1146) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.24.jar!/:8.5.24]
+	... 20 more
+[1;31m2018-02-01 14:03:05,392 ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] - <
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8445 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8445, or configure this application to listen on another port.
+>[m

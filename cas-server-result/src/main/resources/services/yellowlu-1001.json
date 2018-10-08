@@ -1,0 +1,9 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https|imaps|http)://yellowlu.*",
+  "name" : "yellowlu",
+  "id" : 1001,
+  "description" : "yellowcong项目访问过来，跳转到demo主题",
+  "evaluationOrder" : 2,
+  "theme": "yellowlu"
+}

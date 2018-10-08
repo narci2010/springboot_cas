@@ -1,0 +1,753 @@
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=95
+type=GAUGE, name=jvm.gc.Copy.time, value=882
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=2
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=103
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.08216846541693633
+type=GAUGE, name=jvm.memory.heap.used, value=85287512
+type=GAUGE, name=jvm.memory.non-heap.committed, value=38371328
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-3.7352832E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=37352864
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=5996544
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.16191673278808594
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5433024
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.018118458662952048
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=5187800
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=32374784
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9861477376961032
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=31926320
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.1411617963741987
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=5051144
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=5051144
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.1048480051947439
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=75055416
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=30330368
+type=GAUGE, name=jvm.memory.total.committed, value=545357824
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=122656248
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=10
+type=GAUGE, name=thread-states.daemon.count, value=9
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=5
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=1
+type=GAUGE, name=thread-states.waiting.count, value=4
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=137
+type=GAUGE, name=jvm.gc.Copy.time, value=1252
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.12790775214772224
+type=GAUGE, name=jvm.memory.heap.used, value=132763024
+type=GAUGE, name=jvm.memory.non-heap.committed, value=44695552
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-4.3992688E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=43992688
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.18190765380859375
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=6103808
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.18812711562464238
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=53865832
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=38404096
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9865843476695819
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=37888880
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.0924993382268773
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=3309872
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=3309872
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.10559966015660761
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=75593488
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=551682048
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=176776352
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=10
+type=GAUGE, name=thread-states.daemon.count, value=8
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=4
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=4
+type=GAUGE, name=thread-states.waiting.count, value=2
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=183
+type=GAUGE, name=jvm.gc.Copy.time, value=1645
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.10021315212276251
+type=GAUGE, name=jvm.memory.heap.used, value=104017160
+type=GAUGE, name=jvm.memory.non-heap.committed, value=46530560
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-4.5485544E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=45485544
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.17484283447265625
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5866752
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.04065947249978542
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=11641896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=40239104
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9845843485978216
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=39618792
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.17617183028559982
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=6303896
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=6303896
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.1202463654494816
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=86078328
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=553517056
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=149499376
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=10
+type=GAUGE, name=thread-states.daemon.count, value=8
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=4
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=4
+type=GAUGE, name=thread-states.waiting.count, value=2
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=229
+type=GAUGE, name=jvm.gc.Copy.time, value=2078
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.1464316484557512
+type=GAUGE, name=jvm.memory.heap.used, value=151990072
+type=GAUGE, name=jvm.memory.non-heap.committed, value=47972352
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-4.6805656E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=46805656
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.1699047088623047
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5701056
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.17706163318622684
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=50697488
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=41680896
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9861736177648388
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=41104600
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.09916558457818224
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=3548408
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=3548408
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.13654913898353818
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=97748664
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=554958848
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=198811736
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=13
+type=GAUGE, name=thread-states.daemon.count, value=8
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=5
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=6
+type=GAUGE, name=thread-states.waiting.count, value=2
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=254
+type=GAUGE, name=jvm.gc.Copy.time, value=2389
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.22617134010419956
+type=GAUGE, name=jvm.memory.heap.used, value=234758680
+type=GAUGE, name=jvm.memory.non-heap.committed, value=51380224
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-5.0012992E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=50012992
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.17051315307617188
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5721472
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.4312135605169232
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=123467992
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=45088768
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9823182571765988
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=44291520
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.21124491150125915
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=7558904
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=7558904
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.14491657109353542
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=103738488
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=558366720
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=284790888
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=32
+type=GAUGE, name=thread-states.daemon.count, value=24
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=9
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=8
+type=GAUGE, name=thread-states.waiting.count, value=15
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=254
+type=GAUGE, name=jvm.gc.Copy.time, value=2389
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.2367613520612017
+type=GAUGE, name=jvm.memory.heap.used, value=245748616
+type=GAUGE, name=jvm.memory.non-heap.committed, value=51380224
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-5.005584E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=50055840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.17016983032226562
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5709952
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.4702408839265278
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=134642560
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=45088768
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9835240563680959
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=44345888
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.21124491150125915
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=7558904
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=7558904
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.14491657109353542
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=103738488
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=558366720
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=296056344
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=33
+type=GAUGE, name=thread-states.daemon.count, value=24
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=9
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=10
+type=GAUGE, name=thread-states.waiting.count, value=15
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=254
+type=GAUGE, name=jvm.gc.Copy.time, value=2389
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.23750177425091157
+type=GAUGE, name=jvm.memory.heap.used, value=246517144
+type=GAUGE, name=jvm.memory.non-heap.committed, value=51380224
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-5.0033088E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=50030528
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.16919517517089844
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5579456
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.4722788909611753
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=135226096
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=45088768
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.983570187590843
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=44347968
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.21124491150125915
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=7558904
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=7558904
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.14491657109353542
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=103738488
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=558366720
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=296637240
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=33
+type=GAUGE, name=thread-states.daemon.count, value=24
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=10
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=8
+type=GAUGE, name=thread-states.waiting.count, value=15
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=254
+type=GAUGE, name=jvm.gc.Copy.time, value=2389
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.23869441461496874
+type=GAUGE, name=jvm.memory.heap.used, value=247755056
+type=GAUGE, name=jvm.memory.non-heap.committed, value=51380224
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-4.9875712E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=49875712
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.1647205352783203
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5527104
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.476610976079695
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=136466488
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=45088768
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9835843818132267
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=44348608
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.21124491150125915
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=7558904
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=7558904
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.14491657109353542
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=103738488
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=558366720
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=297650720
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=33
+type=GAUGE, name=thread-states.daemon.count, value=24
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=9
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=9
+type=GAUGE, name=thread-states.waiting.count, value=15
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=GAUGE, name=jvm.fd.usage, value=NaN
+type=GAUGE, name=jvm.gc.Copy.count, value=254
+type=GAUGE, name=jvm.gc.Copy.time, value=2389
+type=GAUGE, name=jvm.gc.MarkSweepCompact.count, value=3
+type=GAUGE, name=jvm.gc.MarkSweepCompact.time, value=239
+type=GAUGE, name=jvm.memory.heap.committed, value=506986496
+type=GAUGE, name=jvm.memory.heap.init, value=524288000
+type=GAUGE, name=jvm.memory.heap.max, value=1037959168
+type=GAUGE, name=jvm.memory.heap.usage, value=0.23943447455536132
+type=GAUGE, name=jvm.memory.heap.used, value=248525528
+type=GAUGE, name=jvm.memory.non-heap.committed, value=51380224
+type=GAUGE, name=jvm.memory.non-heap.init, value=163840
+type=GAUGE, name=jvm.memory.non-heap.max, value=-1
+type=GAUGE, name=jvm.memory.non-heap.usage, value=-4.9836672E7
+type=GAUGE, name=jvm.memory.non-heap.used, value=49836672
+type=GAUGE, name=jvm.memory.pools.Code-Cache.committed, value=6291456
+type=GAUGE, name=jvm.memory.pools.Code-Cache.init, value=163840
+type=GAUGE, name=jvm.memory.pools.Code-Cache.max, value=33554432
+type=GAUGE, name=jvm.memory.pools.Code-Cache.usage, value=0.1635570526123047
+type=GAUGE, name=jvm.memory.pools.Code-Cache.used, value=5488064
+type=GAUGE, name=jvm.memory.pools.Eden-Space.committed, value=139984896
+type=GAUGE, name=jvm.memory.pools.Eden-Space.init, value=139853824
+type=GAUGE, name=jvm.memory.pools.Eden-Space.max, value=286326784
+type=GAUGE, name=jvm.memory.pools.Eden-Space.usage, value=0.47929409216568436
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used, value=137234736
+type=GAUGE, name=jvm.memory.pools.Eden-Space.used-after-gc, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.committed, value=45088768
+type=GAUGE, name=jvm.memory.pools.Metaspace.init, value=0
+type=GAUGE, name=jvm.memory.pools.Metaspace.max, value=-1
+type=GAUGE, name=jvm.memory.pools.Metaspace.usage, value=0.9835843818132267
+type=GAUGE, name=jvm.memory.pools.Metaspace.used, value=44348608
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.committed, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.init, value=17432576
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.max, value=35782656
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.usage, value=0.21124491150125915
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used, value=7558904
+type=GAUGE, name=jvm.memory.pools.Survivor-Space.used-after-gc, value=7558904
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.committed, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.init, value=349569024
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.max, value=715849728
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.usage, value=0.14491657109353542
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used, value=103738488
+type=GAUGE, name=jvm.memory.pools.Tenured-Gen.used-after-gc, value=68565552
+type=GAUGE, name=jvm.memory.total.committed, value=558366720
+type=GAUGE, name=jvm.memory.total.init, value=524451840
+type=GAUGE, name=jvm.memory.total.max, value=1037959167
+type=GAUGE, name=jvm.memory.total.used, value=298379416
+type=GAUGE, name=thread-states.blocked.count, value=0
+type=GAUGE, name=thread-states.count, value=33
+type=GAUGE, name=thread-states.daemon.count, value=24
+type=GAUGE, name=thread-states.deadlock.count, value=0
+type=GAUGE, name=thread-states.deadlocks, value=[]
+type=GAUGE, name=thread-states.new.count, value=0
+type=GAUGE, name=thread-states.runnable.count, value=9
+type=GAUGE, name=thread-states.terminated.count, value=0
+type=GAUGE, name=thread-states.timed_waiting.count, value=9
+type=GAUGE, name=thread-states.waiting.count, value=15
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_COUNTER, count=0
+type=COUNTER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_COUNT, count=0
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=METER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_METER, count=0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_PROXY_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.CREATE_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DELETE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.DESTROY_TICKET_GRANTING_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKETS_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GET_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_PROXY_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.GRANT_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.DefaultCentralAuthenticationService$$EnhancerBySpringCGLIB$$c1d85f79.VALIDATE_SERVICE_TICKET_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds
+type=TIMER, name=org.apereo.cas.authentication.PolicyBasedAuthenticationManager.AUTHENTICATE_TIMER, count=0, min=0.0, max=0.0, mean=0.0, stddev=0.0, median=0.0, p75=0.0, p95=0.0, p98=0.0, p99=0.0, p999=0.0, mean_rate=0.0, m1=0.0, m5=0.0, m15=0.0, rate_unit=events/millisecond, duration_unit=milliseconds

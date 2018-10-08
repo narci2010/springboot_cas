@@ -1,0 +1,17 @@
+[33m2018-02-01 11:52:00,108 WARN [org.apereo.cas.web.CasWebApplicationContext] - <Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customAuthenticationHandler': Unsatisfied dependency expressed through field 'jdbcTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jdbc.core.JdbcTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}>[m
+[1;31m2018-02-01 11:52:07,692 ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] - <
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jdbcTemplate in com.air.security.sodb.support.authentication.handler.CustomerAuthenticationHandler required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+	- Bean method 'jdbcTemplate' not loaded because @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+>[m

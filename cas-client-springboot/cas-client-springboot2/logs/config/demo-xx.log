@@ -1,0 +1,774 @@
+2018-02-05 17:27:04.482  INFO 11416 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 11416 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 17:27:04.485  INFO 11416 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 17:27:04.540  INFO 11416 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:27:04 CST 2018]; root of context hierarchy
+2018-02-05 17:27:05.790  INFO 11416 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 17:27:05.801  INFO 11416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 17:27:05.802  INFO 11416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 17:27:05.887  INFO 11416 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 17:27:05.887  INFO 11416 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1349 ms
+2018-02-05 17:27:06.060  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 17:27:06.060  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 17:27:06.060  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 17:27:06.061  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 17:27:06.061  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 17:27:06.061  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 17:27:06.061  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 17:27:06.061  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 17:27:06.062  INFO 11416 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 17:27:06.086  INFO 11416 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:27:06.089  INFO 11416 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:27:06.090  INFO 11416 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 17:27:06.090  INFO 11416 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:27:06.092  INFO 11416 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:27:06.096 ERROR 11416 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Exception starting filter [authenticationFilter]
+
+java.lang.IllegalArgumentException: casServerLoginUrl cannot be null.
+	at org.jasig.cas.client.util.CommonUtils.assertNotNull(CommonUtils.java:87) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.authentication.AuthenticationFilter.init(AuthenticationFilter.java:136) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.util.AbstractCasFilter.init(AbstractCasFilter.java:74) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:285) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:112) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4591) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5233) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1409) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-02-05 17:27:06.096 ERROR 11416 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : One or more Filters failed to start. Full details will be found in the appropriate container log file
+2018-02-05 17:27:06.096 ERROR 11416 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Context [] startup failed due to previous errors
+2018-02-05 17:27:06.106  WARN 11416 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2018-02-05 17:27:06.111  INFO 11416 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-02-05 17:27:06.115 ERROR 11416 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at com.yellowcong.cas.ConfigMain.main(ConfigMain.java:113) [classes/:na]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:123) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:84) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:554) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:179) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:164) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalStateException: StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[] failed to start
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.rethrowDeferredStartupExceptions(TomcatEmbeddedServletContainer.java:167) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:102) ~[spring-boot-1.5.10.RELEASE.jar:1.5.10.RELEASE]
+	... 13 common frames omitted
+
+2018-02-05 17:27:48.726  INFO 6064 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 6064 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 17:27:48.729  INFO 6064 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 17:27:48.774  INFO 6064 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:27:48 CST 2018]; root of context hierarchy
+2018-02-05 17:27:49.997  INFO 6064 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 17:27:50.008  INFO 6064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 17:27:50.008  INFO 6064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 17:27:50.092  INFO 6064 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 17:27:50.092  INFO 6064 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1320 ms
+2018-02-05 17:27:50.248  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 17:27:50.248  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 17:27:50.248  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 17:27:50.248  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 17:27:50.249  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 17:27:50.249  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 17:27:50.249  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 17:27:50.249  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 17:27:50.249  INFO 6064 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 17:27:50.273  INFO 6064 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:27:50.276  INFO 6064 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:27:50.277  INFO 6064 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 17:27:50.277  INFO 6064 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:27:50.279  INFO 6064 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:27:50.279  INFO 6064 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:27:50.520  INFO 6064 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:27:48 CST 2018]; root of context hierarchy
+2018-02-05 17:27:50.579  INFO 6064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:27:50.580  INFO 6064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-05 17:27:50.605  INFO 6064 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:27:50.605  INFO 6064 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:27:50.637  INFO 6064 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:27:50.753  INFO 6064 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-05 17:27:50.805  INFO 6064 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-05 17:27:50.809  INFO 6064 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.423 seconds (JVM running for 2.75)
+2018-02-05 17:28:12.509  INFO 6064 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-05 17:28:12.510  INFO 6064 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-05 17:28:12.527  INFO 6064 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-02-05 17:38:21.857  INFO 3200 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 3200 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 17:38:21.860  INFO 3200 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 17:38:21.904  INFO 3200 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:38:21 CST 2018]; root of context hierarchy
+2018-02-05 17:38:23.181  INFO 3200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 17:38:23.192  INFO 3200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 17:38:23.193  INFO 3200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 17:38:23.276  INFO 3200 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 17:38:23.277  INFO 3200 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1375 ms
+2018-02-05 17:38:23.440  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 17:38:23.440  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 17:38:23.440  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 17:38:23.440  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 17:38:23.440  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 17:38:23.441  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 17:38:23.441  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 17:38:23.441  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 17:38:23.441  INFO 3200 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 17:38:23.465  INFO 3200 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:38:23.468  INFO 3200 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:38:23.469  INFO 3200 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 17:38:23.469  INFO 3200 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:38:23.471  INFO 3200 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:38:23.471  INFO 3200 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:38:23.472  INFO 3200 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-05 17:38:23.709  INFO 3200 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:38:21 CST 2018]; root of context hierarchy
+2018-02-05 17:38:23.765  INFO 3200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index()
+2018-02-05 17:38:23.769  INFO 3200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:38:23.769  INFO 3200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-05 17:38:23.795  INFO 3200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:38:23.795  INFO 3200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:38:23.828  INFO 3200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:38:23.941  INFO 3200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-05 17:38:23.994  INFO 3200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-05 17:38:23.998  INFO 3200 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.494 seconds (JVM running for 2.836)
+2018-02-05 17:38:33.632  INFO 3200 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-05 17:38:33.632  INFO 3200 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-05 17:38:33.649  INFO 3200 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-02-05 17:40:24.793  INFO 7780 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 7780 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 17:40:24.796  INFO 7780 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 17:40:24.843  INFO 7780 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:40:24 CST 2018]; root of context hierarchy
+2018-02-05 17:40:26.118  INFO 7780 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 17:40:26.129  INFO 7780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 17:40:26.129  INFO 7780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 17:40:26.214  INFO 7780 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 17:40:26.214  INFO 7780 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1373 ms
+2018-02-05 17:40:26.373  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 17:40:26.374  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 17:40:26.374  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 17:40:26.374  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 17:40:26.374  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 17:40:26.374  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 17:40:26.374  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 17:40:26.374  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 17:40:26.375  INFO 7780 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 17:40:26.400  INFO 7780 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:40:26.403  INFO 7780 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:40:26.404  INFO 7780 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 17:40:26.404  INFO 7780 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:40:26.406  INFO 7780 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:40:26.406  INFO 7780 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:40:26.406  INFO 7780 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-05 17:40:26.638  INFO 7780 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:40:24 CST 2018]; root of context hierarchy
+2018-02-05 17:40:26.695  INFO 7780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index()
+2018-02-05 17:40:26.697  INFO 7780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-05 17:40:26.697  INFO 7780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-05 17:40:26.699  INFO 7780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:40:26.699  INFO 7780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-05 17:40:26.723  INFO 7780 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:40:26.724  INFO 7780 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:40:26.757  INFO 7780 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:40:26.874  INFO 7780 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-05 17:40:26.927  INFO 7780 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-05 17:40:26.931  INFO 7780 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.508 seconds (JVM running for 2.855)
+2018-02-05 17:40:40.612  INFO 7780 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-05 17:40:40.612  INFO 7780 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-05 17:40:40.628  INFO 7780 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-02-05 17:44:37.648  INFO 11344 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 11344 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 17:44:37.651  INFO 11344 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 17:44:37.698  INFO 11344 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:44:37 CST 2018]; root of context hierarchy
+2018-02-05 17:44:38.940  INFO 11344 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 17:44:38.951  INFO 11344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 17:44:38.952  INFO 11344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 17:44:39.034  INFO 11344 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 17:44:39.035  INFO 11344 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1340 ms
+2018-02-05 17:44:39.192  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 17:44:39.193  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 17:44:39.193  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 17:44:39.193  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 17:44:39.193  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 17:44:39.193  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 17:44:39.193  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 17:44:39.193  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 17:44:39.194  INFO 11344 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 17:44:39.218  INFO 11344 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:44:39.222  INFO 11344 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:44:39.223  INFO 11344 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 17:44:39.223  INFO 11344 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:44:39.225  INFO 11344 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:44:39.225  INFO 11344 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:44:39.225  INFO 11344 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-05 17:44:39.470  INFO 11344 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:44:37 CST 2018]; root of context hierarchy
+2018-02-05 17:44:39.530  INFO 11344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index()
+2018-02-05 17:44:39.532  INFO 11344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-05 17:44:39.532  INFO 11344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-05 17:44:39.534  INFO 11344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:44:39.535  INFO 11344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-05 17:44:39.547  INFO 11344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-05 17:44:39.559  INFO 11344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:44:39.559  INFO 11344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:44:39.596  INFO 11344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:44:39.715  INFO 11344 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-05 17:44:39.771  INFO 11344 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-05 17:44:39.775  INFO 11344 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.477 seconds (JVM running for 2.812)
+2018-02-05 17:45:07.002  INFO 11344 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-05 17:45:07.002  INFO 11344 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-05 17:45:07.020  INFO 11344 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-02-05 17:48:50.499  INFO 7500 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 7500 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 17:48:50.501  INFO 7500 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 17:48:50.550  INFO 7500 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:48:50 CST 2018]; root of context hierarchy
+2018-02-05 17:48:51.821  INFO 7500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 17:48:51.831  INFO 7500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 17:48:51.832  INFO 7500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 17:48:51.912  INFO 7500 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 17:48:51.913  INFO 7500 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1366 ms
+2018-02-05 17:48:52.071  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 17:48:52.072  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 17:48:52.072  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 17:48:52.072  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 17:48:52.072  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 17:48:52.072  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 17:48:52.072  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 17:48:52.072  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 17:48:52.073  INFO 7500 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 17:48:52.097  INFO 7500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:48:52.100  INFO 7500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:48:52.101  INFO 7500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 17:48:52.101  INFO 7500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:48:52.103  INFO 7500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:48:52.103  INFO 7500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:48:52.103  INFO 7500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-05 17:48:52.343  INFO 7500 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1167fb7: startup date [Mon Feb 05 17:48:50 CST 2018]; root of context hierarchy
+2018-02-05 17:48:52.400  INFO 7500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:48:52.402  INFO 7500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-05 17:48:52.402  INFO 7500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-05 17:48:52.404  INFO 7500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:48:52.404  INFO 7500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-05 17:48:52.417  INFO 7500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-05 17:48:52.427  INFO 7500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:48:52.428  INFO 7500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:48:52.463  INFO 7500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:48:52.580  INFO 7500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-05 17:48:52.633  INFO 7500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-05 17:48:52.637  INFO 7500 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.505 seconds (JVM running for 2.852)
+2018-02-05 17:49:10.579  INFO 7500 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-05 17:49:10.579  INFO 7500 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-05 17:49:10.596  INFO 7500 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-02-05 17:56:20.759  INFO 11476 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 11476 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 17:56:20.762  INFO 11476 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 17:56:20.808  INFO 11476 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Mon Feb 05 17:56:20 CST 2018]; root of context hierarchy
+2018-02-05 17:56:22.104  INFO 11476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 17:56:22.115  INFO 11476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 17:56:22.116  INFO 11476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 17:56:22.267  INFO 11476 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-05 17:56:22.270  INFO 11476 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 17:56:22.270  INFO 11476 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1464 ms
+2018-02-05 17:56:22.453  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 17:56:22.454  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 17:56:22.454  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 17:56:22.454  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 17:56:22.454  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 17:56:22.454  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 17:56:22.455  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 17:56:22.455  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 17:56:22.455  INFO 11476 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 17:56:22.481  INFO 11476 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:56:22.484  INFO 11476 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:56:22.485  INFO 11476 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 17:56:22.485  INFO 11476 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:56:22.487  INFO 11476 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 17:56:22.487  INFO 11476 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 17:56:22.487  INFO 11476 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-05 17:56:22.741  INFO 11476 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Mon Feb 05 17:56:20 CST 2018]; root of context hierarchy
+2018-02-05 17:56:22.799  INFO 11476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:56:22.801  INFO 11476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-05 17:56:22.802  INFO 11476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-05 17:56:22.804  INFO 11476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-05 17:56:22.804  INFO 11476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-05 17:56:22.816  INFO 11476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-05 17:56:22.826  INFO 11476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:56:22.826  INFO 11476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:56:22.862  INFO 11476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 17:56:22.979  INFO 11476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-05 17:56:23.039  INFO 11476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-05 17:56:23.055  INFO 11476 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.656 seconds (JVM running for 2.997)
+2018-02-05 17:57:23.143  INFO 11476 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-05 17:57:23.144  INFO 11476 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-05 17:57:23.166  INFO 11476 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-02-05 18:02:38.822  INFO 12096 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 12096 (C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\cas-client-springboot)
+2018-02-05 18:02:38.825  INFO 12096 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-05 18:02:38.870  INFO 12096 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Mon Feb 05 18:02:38 CST 2018]; root of context hierarchy
+2018-02-05 18:02:40.118  INFO 12096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-05 18:02:40.129  INFO 12096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-05 18:02:40.130  INFO 12096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-05 18:02:40.278  INFO 12096 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-05 18:02:40.281  INFO 12096 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-05 18:02:40.281  INFO 12096 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1413 ms
+2018-02-05 18:02:40.476  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-05 18:02:40.477  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-05 18:02:40.477  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-05 18:02:40.477  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-05 18:02:40.477  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-05 18:02:40.477  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-05 18:02:40.478  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-05 18:02:40.478  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-05 18:02:40.478  INFO 12096 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-05 18:02:40.503  INFO 12096 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 18:02:40.506  INFO 12096 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 18:02:40.508  INFO 12096 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-05 18:02:40.508  INFO 12096 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 18:02:40.510  INFO 12096 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-05 18:02:40.510  INFO 12096 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-05 18:02:40.510  INFO 12096 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-05 18:02:40.761  INFO 12096 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Mon Feb 05 18:02:38 CST 2018]; root of context hierarchy
+2018-02-05 18:02:40.819  INFO 12096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-05 18:02:40.821  INFO 12096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-05 18:02:40.821  INFO 12096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-05 18:02:40.823  INFO 12096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-05 18:02:40.823  INFO 12096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-05 18:02:40.835  INFO 12096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-05 18:02:40.845  INFO 12096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 18:02:40.845  INFO 12096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 18:02:40.879  INFO 12096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-05 18:02:40.996  INFO 12096 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-05 18:02:41.057  INFO 12096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-05 18:02:41.061  INFO 12096 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.607 seconds (JVM running for 2.952)
+2018-02-05 18:02:51.516  INFO 12096 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-05 18:02:51.516  INFO 12096 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-05 18:02:51.541  INFO 12096 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-02-06 08:31:54.869  INFO 8660 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 8660 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot)
+2018-02-06 08:31:54.872  INFO 8660 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 08:31:54.921  INFO 8660 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:31:54 CST 2018]; root of context hierarchy
+2018-02-06 08:31:56.186  INFO 8660 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-06 08:31:56.197  INFO 8660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 08:31:56.198  INFO 8660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 08:31:56.362  INFO 8660 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 08:31:56.364  INFO 8660 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 08:31:56.365  INFO 8660 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1446 ms
+2018-02-06 08:31:56.595  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 08:31:56.596  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 08:31:56.596  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 08:31:56.596  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 08:31:56.596  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 08:31:56.596  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 08:31:56.596  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 08:31:56.597  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 08:31:56.597  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 08:31:56.623  INFO 8660 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:31:56.626  INFO 8660 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:31:56.627  INFO 8660 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 08:31:56.628  INFO 8660 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:31:56.629  INFO 8660 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:31:56.629  INFO 8660 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:31:56.630  INFO 8660 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 08:31:56.897  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:31:54 CST 2018]; root of context hierarchy
+2018-02-06 08:31:56.963  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:31:56.965  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 08:31:56.966  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 08:31:56.968  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:31:56.969  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 08:31:56.982  INFO 8660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 08:31:56.994  INFO 8660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:31:56.994  INFO 8660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:31:57.037  INFO 8660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:31:57.168  INFO 8660 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 08:31:57.232  INFO 8660 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-06 08:31:57.236  INFO 8660 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.725 seconds (JVM running for 3.062)
+2018-02-06 08:32:36.953  INFO 8660 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 08:32:36.953  INFO 8660 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 08:32:36.979  INFO 8660 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-02-06 08:35:13.691  INFO 5796 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 5796 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot)
+2018-02-06 08:35:13.693  INFO 5796 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 08:35:13.739  INFO 5796 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:35:13 CST 2018]; root of context hierarchy
+2018-02-06 08:35:14.983  INFO 5796 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-06 08:35:14.993  INFO 5796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 08:35:14.994  INFO 5796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 08:35:15.138  INFO 5796 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 08:35:15.141  INFO 5796 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 08:35:15.141  INFO 5796 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1404 ms
+2018-02-06 08:35:15.339  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 08:35:15.340  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 08:35:15.340  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 08:35:15.340  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 08:35:15.340  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 08:35:15.340  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 08:35:15.341  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 08:35:15.341  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 08:35:15.341  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 08:35:15.367  INFO 5796 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:35:15.370  INFO 5796 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:35:15.371  INFO 5796 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 08:35:15.371  INFO 5796 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:35:15.373  INFO 5796 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:35:15.373  INFO 5796 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:35:15.374  INFO 5796 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 08:35:15.621  INFO 5796 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:35:13 CST 2018]; root of context hierarchy
+2018-02-06 08:35:15.679  INFO 5796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:35:15.682  INFO 5796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 08:35:15.682  INFO 5796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 08:35:15.682  INFO 5796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 08:35:15.684  INFO 5796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:35:15.685  INFO 5796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 08:35:15.696  INFO 5796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 08:35:15.706  INFO 5796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:35:15.706  INFO 5796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:35:15.741  INFO 5796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:35:15.857  INFO 5796 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 08:35:15.915  INFO 5796 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-06 08:35:15.919  INFO 5796 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.581 seconds (JVM running for 2.907)
+2018-02-06 08:35:22.826  INFO 5796 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 08:35:22.826  INFO 5796 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 08:35:22.856  INFO 5796 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-02-06 08:39:27.384  INFO 6500 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 6500 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot)
+2018-02-06 08:39:27.387  INFO 6500 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 08:39:27.432  INFO 6500 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:39:27 CST 2018]; root of context hierarchy
+2018-02-06 08:39:28.683  INFO 6500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-06 08:39:28.693  INFO 6500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 08:39:28.694  INFO 6500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 08:39:28.836  INFO 6500 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 08:39:28.839  INFO 6500 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 08:39:28.839  INFO 6500 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1409 ms
+2018-02-06 08:39:29.048  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 08:39:29.048  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 08:39:29.048  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 08:39:29.048  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 08:39:29.049  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 08:39:29.049  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 08:39:29.049  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 08:39:29.049  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 08:39:29.050  INFO 6500 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 08:39:29.075  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:39:29.078  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:39:29.080  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 08:39:29.080  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:39:29.082  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:39:29.082  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:39:29.082  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 08:39:29.082  INFO 6500 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 08:39:29.336  INFO 6500 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:39:27 CST 2018]; root of context hierarchy
+2018-02-06 08:39:29.395  INFO 6500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:39:29.397  INFO 6500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 08:39:29.398  INFO 6500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 08:39:29.398  INFO 6500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 08:39:29.400  INFO 6500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:39:29.401  INFO 6500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 08:39:29.412  INFO 6500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 08:39:29.422  INFO 6500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:39:29.423  INFO 6500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:39:29.457  INFO 6500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:39:29.574  INFO 6500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 08:39:29.633  INFO 6500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-06 08:39:29.637  INFO 6500 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.613 seconds (JVM running for 2.936)
+2018-02-06 08:39:42.720  INFO 6500 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 08:39:42.721  INFO 6500 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 08:39:42.744  INFO 6500 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-02-06 08:42:42.329  INFO 5716 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 5716 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot)
+2018-02-06 08:42:42.332  INFO 5716 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 08:42:42.382  INFO 5716 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:42:42 CST 2018]; root of context hierarchy
+2018-02-06 08:42:50.005  INFO 7400 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 7400 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot)
+2018-02-06 08:42:50.008  INFO 7400 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 08:42:50.053  INFO 7400 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:42:50 CST 2018]; root of context hierarchy
+2018-02-06 08:42:51.280  INFO 7400 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-02-06 08:42:51.290  INFO 7400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 08:42:51.290  INFO 7400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 08:42:51.433  INFO 7400 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 08:42:51.435  INFO 7400 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 08:42:51.436  INFO 7400 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1385 ms
+2018-02-06 08:42:51.635  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 08:42:51.635  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 08:42:51.635  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 08:42:51.636  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 08:42:51.636  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 08:42:51.636  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 08:42:51.636  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 08:42:51.636  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 08:42:51.637  INFO 7400 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 08:42:51.663  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:42:51.666  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:42:51.668  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 08:42:51.668  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:42:51.669  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:42:51.670  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:42:51.670  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 08:42:51.670  INFO 7400 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 08:42:51.921  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:42:50 CST 2018]; root of context hierarchy
+2018-02-06 08:42:51.980  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:42:51.982  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 08:42:51.982  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 08:42:51.982  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 08:42:51.984  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:42:51.985  INFO 7400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 08:42:51.996  INFO 7400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 08:42:52.005  INFO 7400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:42:52.006  INFO 7400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:42:52.040  INFO 7400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:42:52.162  INFO 7400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 08:42:52.224  INFO 7400 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-02-06 08:42:52.228  INFO 7400 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.581 seconds (JVM running for 2.926)
+2018-02-06 08:54:30.276  INFO 7400 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 08:54:30.277  INFO 7400 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 08:54:30.303  INFO 7400 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-02-06 08:57:53.497  INFO 8788 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 8788 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2)
+2018-02-06 08:57:53.499  INFO 8788 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 08:57:53.546  INFO 8788 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:57:53 CST 2018]; root of context hierarchy
+2018-02-06 08:57:54.826  INFO 8788 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8889 (http)
+2018-02-06 08:57:54.836  INFO 8788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 08:57:54.837  INFO 8788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 08:57:54.983  INFO 8788 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 08:57:54.986  INFO 8788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 08:57:54.987  INFO 8788 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1443 ms
+2018-02-06 08:57:55.198  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 08:57:55.199  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 08:57:55.199  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 08:57:55.199  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 08:57:55.200  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 08:57:55.200  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 08:57:55.200  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 08:57:55.200  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 08:57:55.200  INFO 8788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 08:57:55.229  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:57:55.232  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:57:55.234  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 08:57:55.234  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:57:55.236  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:57:55.236  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:57:55.236  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 08:57:55.236  INFO 8788 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 08:57:55.501  INFO 8788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:57:53 CST 2018]; root of context hierarchy
+2018-02-06 08:57:55.562  INFO 8788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:57:55.564  INFO 8788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 08:57:55.564  INFO 8788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 08:57:55.564  INFO 8788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 08:57:55.566  INFO 8788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:57:55.567  INFO 8788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 08:57:55.580  INFO 8788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 08:57:55.589  INFO 8788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:57:55.590  INFO 8788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:57:55.627  INFO 8788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:57:55.751  INFO 8788 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 08:57:55.809  INFO 8788 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8889 (http)
+2018-02-06 08:57:55.813  INFO 8788 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.681 seconds (JVM running for 3.02)
+2018-02-06 08:58:14.006  INFO 8788 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 08:58:14.007  INFO 8788 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 08:58:14.033  INFO 8788 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-02-06 08:59:37.599  INFO 8648 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 8648 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2)
+2018-02-06 08:59:37.602  INFO 8648 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 08:59:37.649  INFO 8648 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:59:37 CST 2018]; root of context hierarchy
+2018-02-06 08:59:38.929  INFO 8648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8889 (http)
+2018-02-06 08:59:38.940  INFO 8648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 08:59:38.941  INFO 8648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 08:59:39.086  INFO 8648 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 08:59:39.088  INFO 8648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 08:59:39.089  INFO 8648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1442 ms
+2018-02-06 08:59:39.291  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 08:59:39.291  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 08:59:39.291  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 08:59:39.291  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 08:59:39.292  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 08:59:39.292  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 08:59:39.292  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 08:59:39.292  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 08:59:39.293  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 08:59:39.318  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:59:39.321  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:59:39.323  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 08:59:39.323  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:59:39.325  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 08:59:39.325  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 08:59:39.325  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 08:59:39.325  INFO 8648 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 08:59:39.590  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 08:59:37 CST 2018]; root of context hierarchy
+2018-02-06 08:59:39.650  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:59:39.652  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 08:59:39.653  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 08:59:39.653  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 08:59:39.655  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 08:59:39.655  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 08:59:39.668  INFO 8648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 08:59:39.678  INFO 8648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:59:39.678  INFO 8648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:59:39.717  INFO 8648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 08:59:39.845  INFO 8648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 08:59:39.907  INFO 8648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8889 (http)
+2018-02-06 08:59:39.911  INFO 8648 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.669 seconds (JVM running for 2.997)
+2018-02-06 08:59:55.524  INFO 8648 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 08:59:55.525  INFO 8648 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 08:59:55.550  INFO 8648 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-02-06 09:00:16.262  INFO 9264 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 9264 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2)
+2018-02-06 09:00:16.265  INFO 9264 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 09:00:16.310  INFO 9264 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:00:16 CST 2018]; root of context hierarchy
+2018-02-06 09:00:17.526  INFO 9264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8889 (http)
+2018-02-06 09:00:17.536  INFO 9264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 09:00:17.537  INFO 9264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 09:00:17.677  INFO 9264 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 09:00:17.679  INFO 9264 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 09:00:17.680  INFO 9264 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1372 ms
+2018-02-06 09:00:17.878  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 09:00:17.878  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 09:00:17.878  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 09:00:17.878  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 09:00:17.879  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 09:00:17.879  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 09:00:17.879  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 09:00:17.879  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 09:00:17.880  INFO 9264 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 09:00:17.904  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:00:17.907  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 09:00:17.909  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 09:00:17.909  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:00:17.910  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 09:00:17.911  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:00:17.911  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 09:00:17.911  INFO 9264 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 09:00:18.154  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:00:16 CST 2018]; root of context hierarchy
+2018-02-06 09:00:18.211  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:00:18.213  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 09:00:18.213  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 09:00:18.213  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 09:00:18.215  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:00:18.216  INFO 9264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 09:00:18.227  INFO 9264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 09:00:18.236  INFO 9264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:00:18.236  INFO 9264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:00:18.269  INFO 9264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:00:18.385  INFO 9264 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 09:00:18.442  INFO 9264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8889 (http)
+2018-02-06 09:00:18.446  INFO 9264 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.527 seconds (JVM running for 2.846)
+2018-02-06 09:00:31.045  INFO 9264 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 09:00:31.046  INFO 9264 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 09:00:31.071  INFO 9264 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-02-06 09:01:09.870  INFO 11044 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 11044 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2)
+2018-02-06 09:01:09.873  INFO 11044 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 09:01:09.918  INFO 11044 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:01:09 CST 2018]; root of context hierarchy
+2018-02-06 09:01:11.133  INFO 11044 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8889 (http)
+2018-02-06 09:01:11.142  INFO 11044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 09:01:11.143  INFO 11044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 09:01:11.289  INFO 11044 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 09:01:11.292  INFO 11044 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 09:01:11.293  INFO 11044 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1378 ms
+2018-02-06 09:01:11.493  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 09:01:11.494  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 09:01:11.494  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 09:01:11.494  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 09:01:11.494  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 09:01:11.494  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 09:01:11.495  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 09:01:11.495  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 09:01:11.495  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 09:01:11.523  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:01:11.526  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 09:01:11.527  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 09:01:11.527  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:01:11.529  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8888]
+2018-02-06 09:01:11.529  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:01:11.530  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 09:01:11.530  INFO 11044 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 09:01:11.798  INFO 11044 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:01:09 CST 2018]; root of context hierarchy
+2018-02-06 09:01:11.858  INFO 11044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:01:11.860  INFO 11044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 09:01:11.861  INFO 11044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 09:01:11.861  INFO 11044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 09:01:11.863  INFO 11044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:01:11.864  INFO 11044 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 09:01:11.877  INFO 11044 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 09:01:11.887  INFO 11044 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:01:11.887  INFO 11044 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:01:11.923  INFO 11044 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:01:12.051  INFO 11044 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 09:01:12.112  INFO 11044 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8889 (http)
+2018-02-06 09:01:12.116  INFO 11044 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.588 seconds (JVM running for 2.916)
+2018-02-06 09:01:26.646  INFO 11044 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 09:01:26.646  INFO 11044 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 09:01:26.673  INFO 11044 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-02-06 09:01:48.981  INFO 11124 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 11124 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2)
+2018-02-06 09:01:48.984  INFO 11124 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 09:01:49.028  INFO 11124 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:01:49 CST 2018]; root of context hierarchy
+2018-02-06 09:01:50.250  INFO 11124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8889 (http)
+2018-02-06 09:01:50.260  INFO 11124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 09:01:50.260  INFO 11124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 09:01:50.402  INFO 11124 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 09:01:50.404  INFO 11124 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 09:01:50.405  INFO 11124 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1379 ms
+2018-02-06 09:01:50.604  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 09:01:50.605  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 09:01:50.605  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 09:01:50.605  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 09:01:50.605  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 09:01:50.606  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 09:01:50.606  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 09:01:50.606  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 09:01:50.606  INFO 11124 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 09:01:50.631  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:01:50.635  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8889]
+2018-02-06 09:01:50.636  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 09:01:50.636  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:01:50.638  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8889]
+2018-02-06 09:01:50.638  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:01:50.638  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 09:01:50.638  INFO 11124 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 09:01:50.888  INFO 11124 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:01:49 CST 2018]; root of context hierarchy
+2018-02-06 09:01:50.948  INFO 11124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:01:50.951  INFO 11124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 09:01:50.951  INFO 11124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 09:01:50.951  INFO 11124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 09:01:50.953  INFO 11124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:01:50.954  INFO 11124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 09:01:50.966  INFO 11124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 09:01:50.976  INFO 11124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:01:50.976  INFO 11124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:01:51.012  INFO 11124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:01:51.138  INFO 11124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 09:01:51.198  INFO 11124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8889 (http)
+2018-02-06 09:01:51.202  INFO 11124 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.574 seconds (JVM running for 2.906)
+2018-02-06 09:01:57.888  INFO 11124 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 09:01:57.889  INFO 11124 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 09:01:57.914  INFO 11124 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-02-06 09:04:10.049  INFO 10468 --- [main] com.yellowcong.cas.ConfigMain            : Starting ConfigMain on Z_-PC with PID 10468 (C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2\target\classes started by zhangrw in C:\Users\zhangrw\Desktop\cas-springboot\springboot_cas\cas-client-springboot2)
+2018-02-06 09:04:10.051  INFO 10468 --- [main] com.yellowcong.cas.ConfigMain            : No active profile set, falling back to default profiles: default
+2018-02-06 09:04:10.095  INFO 10468 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:04:10 CST 2018]; root of context hierarchy
+2018-02-06 09:04:11.418  INFO 10468 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8889 (http)
+2018-02-06 09:04:11.429  INFO 10468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-06 09:04:11.430  INFO 10468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-06 09:04:11.583  INFO 10468 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-02-06 09:04:11.585  INFO 10468 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-06 09:04:11.586  INFO 10468 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1493 ms
+2018-02-06 09:04:11.811  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 09:04:11.812  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 09:04:11.812  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 09:04:11.812  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 09:04:11.812  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-02-06 09:04:11.813  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-02-06 09:04:11.813  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-02-06 09:04:11.813  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-02-06 09:04:11.813  INFO 10468 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 09:04:11.841  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:04:11.845  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8889]
+2018-02-06 09:04:11.846  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-02-06 09:04:11.846  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:04:11.848  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://yellowcong.com:8889]
+2018-02-06 09:04:11.848  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://yellowcong.com:9000]
+2018-02-06 09:04:11.848  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-02-06 09:04:11.848  INFO 10468 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.yellowcong.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-02-06 09:04:12.106  INFO 10468 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fe63b9: startup date [Tue Feb 06 09:04:10 CST 2018]; root of context hierarchy
+2018-02-06 09:04:12.163  INFO 10468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.yellowcong.cas.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:04:12.165  INFO 10468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2()
+2018-02-06 09:04:12.166  INFO 10468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-02-06 09:04:12.166  INFO 10468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.yellowcong.cas.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-02-06 09:04:12.168  INFO 10468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 09:04:12.168  INFO 10468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 09:04:12.180  INFO 10468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-02-06 09:04:12.190  INFO 10468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:04:12.191  INFO 10468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:04:12.228  INFO 10468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 09:04:12.349  INFO 10468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-06 09:04:12.409  INFO 10468 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8889 (http)
+2018-02-06 09:04:12.413  INFO 10468 --- [main] com.yellowcong.cas.ConfigMain            : Started ConfigMain in 2.728 seconds (JVM running for 3.07)
+2018-02-06 09:07:01.384  INFO 10468 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 09:07:01.385  INFO 10468 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 09:07:01.412  INFO 10468 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms

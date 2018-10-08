@@ -1,0 +1,13 @@
+{
+    "@class": "org.apereo.cas.services.RegexRegisteredService",
+    "serviceId": "^(http|https|imaps)://yellowcong.*",
+    "name": "yellowcong",
+    "id": 1000,
+    "description": "yellowcong ÓÃ»§ÍøÕ¾µÄµÇÂ¼",
+    "evaluationOrder": 100,
+    "theme":"apereo",
+    "logoutUrl": "http://yellowcong.com:8888/user/loginOut/success" ,
+    "attributeReleasePolicy": {
+        "@class": "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+    }
+}

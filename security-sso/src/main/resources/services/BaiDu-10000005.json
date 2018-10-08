@@ -1,0 +1,9 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https|imaps|http)://baidu.*",
+  "name" : "BaiDu",
+  "id" : 10000005,
+  "description" : "This service definition authorizes all application urls that supportBaiDu.",
+  "evaluationOrder" : 10,
+  "theme": "demo"
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title th:text="${#themes.code('yellowcong.pageTitle')}"></title>
+    <link rel="stylesheet" th:href="@{${#themes.code('yellowcong.css.file')}}"/>
+    <script type="text/javascript" th:src="@{/themes/yellowcong/js/jquery-1.7.1.js}" ></script>
+    <script type="text/javascript" th:src="@{/themes/yellowcong/js/code.js}" ></script>
+    
+</head>
+
+<body>
+<h1 th:text="${#themes.code('yellowcong.pageTitle')}"></h1>
+<h2>yellowcong的登录模板</h2>
+<div>
+    <form method="post" th:object="${credential}">
+    	<!-- 用于判断验证码是否正确的情况 -->
+    	<input type="hidden" id="codeValid" value="false"/>
+    	<!-- 登录失败的次数，失败三次，就需要输入验证码了 -->
+    	<input type="hidden" id="loginCnt" value="0"/>
+    		
+    	<div id="info"></div>
+        <div id="errors" th:if="${#fields.hasErrors('*')}">
+            <span th:each="err : ${#fields.errors('*')}" th:utext="${err}"/>
+        </div>
+        <h2 th:utext="#{screen.welcome.instructions}"></h2>
+
+        <section class="row">
+            <label for="username" th:utext="#{screen.welcome.label.netid}"/>
+            <div th:unless="${openIdLocalId}">
+                <input class="required"
+                       id="username"
+                       size="25"
+                       tabindex="1"
+                       type="text"
+                       th:disabled="${guaEnabled}"
+                       th:field="*{username}"
+                       th:accesskey="#{screen.welcome.label.netid.accesskey}"
+                       autocomplete="off"/>
+            </div>
+        </section>
+
+        <section class="row">
+            <label for="password" th:utext="#{screen.welcome.label.password}"/>
+            <div>
+                <input class="required"
+                       type="password"
+                       id="password"
+                       size="25"
+                       tabindex="2"
+                       th:accesskey="#{screen.welcome.label.password.accesskey}"
+                       th:field="*{password}"
+                       autocomplete="off"/>
+            </div>
+        </section>
+        <!-- 验证码信息 -->
+        <section id="captcha_sec"  style="display: none;">
+			<img id="captcha_img" th:src="@{/captcha}" onclick="changeCode()" style="width: 125px;"/>
+			<input type="text" id="code"/>
+			<span id="code_str"></span>
+        </section>
+        <section>
+            <input type="hidden" name="execution" th:value="${flowExecutionKey}"/>
+            <input type="hidden" name="_eventId" value="submit"/>
+            <input type="hidden" name="geolocation"/>
+            <input class="btn btn-submit btn-block"
+                   name="submit"
+                   accesskey="l"
+                   th:value="#{screen.welcome.button.login}"
+                   tabindex="6"
+                   type="submit" hidden="true"/>
+             	
+            <!-- 定义一个自己的按钮 -->
+            <input type="button" value="登录" id="btn_login" onclick="login()" class="btn_login"/>
+            
+        </section>
+    </form>
+</div>
+</body>
+</html>

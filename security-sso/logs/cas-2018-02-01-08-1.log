@@ -1,0 +1,29 @@
+[32m2018-02-01 08:54:57,997 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Configuration directory [\etc\cas\config] is not a directory or cannot be found at the specific path>[m
+[32m2018-02-01 08:54:58,036 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Found and loaded [0] setting(s) from [\etc\cas\config]>[m
+[32m2018-02-01 08:54:58,043 INFO [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration] - <Located property source: PropertiesPropertySource {name='standaloneCasConfigService'}>[m
+[32m2018-02-01 08:54:58,067 INFO [org.apereo.cas.web.CasWebApplication] - <The following profiles are active: standalone>[m
+[32m2018-02-01 08:54:58,203 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Refreshing CasWebApplicationContext>[m
+[32m2018-02-01 08:55:20,147 INFO [org.apereo.cas.configuration.support.Beans] - <Ticket registry encryption/signing is turned off. This MAY NOT be safe in a clustered production environment. Consider using other choices to handle encryption, signing and verification of ticket registry tickets, and verify the chosen ticket registry does support this behavior.>[m
+[32m2018-02-01 08:57:31,660 INFO [org.apereo.cas.support.events.listener.CasConfigurationEventListener] - <Refreshing CAS configuration. Stand by...>[m
+[33m2018-02-01 08:57:38,693 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for encryption is not defined for [Ticket-granting Cookie]; CAS will attempt to auto-generate the encryption key>[m
+[33m2018-02-01 08:57:38,769 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated encryption key [E__YUK-G5a5dgEQkfp3SneFPRAW3eHLBpZKeDcZOteg] of size [256] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.encryption.key].>[m
+[33m2018-02-01 08:57:38,793 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Secret key for signing is not defined for [Ticket-granting Cookie]. CAS will attempt to auto-generate the signing key>[m
+[33m2018-02-01 08:57:38,794 WARN [org.apereo.cas.util.cipher.BaseStringCipherExecutor] - <Generated signing key [fDdyWcl9ek2ZYGAPxhmCcSvgKVoqkca44CP41zPT8vDH3GY_KWLJW0Ib-AcaSc41eLWNuIqBE9w_0KD3GuUJTw] of size [512] for [Ticket-granting Cookie]. The generated key MUST be added to CAS settings under setting [cas.tgc.crypto.signing.key].>[m
+[33m2018-02-01 08:57:42,573 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for signing is not defined under [cas.webflow.crypto.signing.key]. CAS will attempt to auto-generate the signing key>[m
+[33m2018-02-01 08:57:42,573 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated signing key [QShoDtn7wbWNBeytVVT3j8uX5otOtdxLDARH6YwMQmRn4BxfOmMZQT1cUfkq7OCjsQWjTs_Pqo7g8rQ3clKdAA] of size [512]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.signing.key].>[m
+[33m2018-02-01 08:57:42,573 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Secret key for encryption is not defined under [cas.webflow.crypto.encryption.key]. CAS will attempt to auto-generate the encryption key>[m
+[33m2018-02-01 08:57:42,591 WARN [org.apereo.cas.util.cipher.BaseBinaryCipherExecutor] - <Generated encryption key [q45Dqi35KPTghOiXmQODkQ] of size [16]. The generated key MUST be added to CAS settings under setting [cas.webflow.crypto.encryption.key].>[m
+[32m2018-02-01 08:57:43,726 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <[36m>[m
+[32m2018-02-01 08:57:43,731 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <
+
+  ____    _____      _      ____   __   __
+ |  _ \  | ____|    / \    |  _ \  \ \ / /
+ | |_) | |  _|     / _ \   | | | |  \ V / 
+ |  _ <  | |___   / ___ \  | |_| |   | |  
+ |_| \_\ |_____| /_/   \_\ |____/    |_|  
+                                          
+>[m
+[32m2018-02-01 08:57:43,731 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <[0m>[m
+[32m2018-02-01 08:57:43,731 INFO [org.apereo.cas.support.events.listener.DefaultCasEventListener] - <Ready to process requests @ [2018-02-01T00:57:43.725Z]>[m
+[32m2018-02-01 08:57:43,736 INFO [org.apereo.cas.web.CasWebApplication] - <Started CasWebApplication in 181.339 seconds (JVM running for 190.908)>[m
+[32m2018-02-01 08:58:13,273 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m

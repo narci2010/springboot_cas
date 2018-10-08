@@ -1,0 +1,12 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https|imaps|http)://yellowcong.*",
+  "name" : "yellowcong",
+  "id" : 1000,
+  "description" : "yellowcong is a dou bi ",
+  "evaluationOrder" : 1,
+  "theme": "yellowcong",
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  }
+}

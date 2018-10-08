@@ -1,0 +1,2 @@
+[32m2018-02-01 11:00:40,269 INFO [org.apereo.cas.ticket.registry.DefaultTicketRegistryCleaner] - <[0] expired tickets removed.>[m
+[32m2018-02-01 11:01:42,797 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Closing CasWebApplicationContext>[m

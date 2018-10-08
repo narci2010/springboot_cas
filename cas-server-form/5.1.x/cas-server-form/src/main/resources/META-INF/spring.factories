@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.yellowcong.config.CustomerAuthWebflowConfiguration,\
+com.yellowcong.config.CustomAuthenticationEventExecutionPlanConfiguration

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	<mvc:default-servlet-handler/>
+	<!-- 通过Annotation 来控制Controller -->
+	<mvc:annotation-driven></mvc:annotation-driven>
+	<context:component-scan base-package="com.yellowcong"></context:component-scan>
+	
+	<!-- 将静态文件夹制定到某个特别的文件夹中统一处理
+		** 表示的是文件夹中的子文件夹中的所有类容
+	 	其中location 需要两个 正斜杠
+	 -->
+	 
+	<mvc:resources location="/resources/" mapping="/resources/**"/>
+		<!-- 配置权限拦截器 -->
+		<!-- 当我们的数据访问到 amdin的时候，就会直接调用admin对象 -->
+ <!-- 	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/user/**"/>
+			<mvc:mapping path="/role/**"/>
+			<mvc:mapping path="/group/**"/>
+			<mvc:mapping path="/attachment/**"/>
+			<mvc:mapping path="/reply/**"/>
+			<mvc:mapping path="/tabel/**"/>
+			<mvc:mapping path="/image/**"/>
+			<mvc:mapping path="/info/**"/>
+			<mvc:mapping path="/login/stu"/>
+			<mvc:mapping path="/admin/**"/>
+			<bean class="com.yellowcong.interceptor.UserInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>	 --> 
+	<!-- 设定访问的名称 和对应的Servlet -->	
+	<!-- 配置Multipart,只有设定了才能完成文件上传 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="5000000"></property>
+	</bean>
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 3.0.5后默认加上了jstl的属性配置.这个就是默认的配置 -->
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+		<!-- 设定前缀 -->
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<!-- 设定后缀 -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+	<!-- 配置全局异常 -->
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+			<!-- 
+				<prop key="com.yellowcong.exception.UserException">error</prop>
+				<prop key="java.lang.RuntimeExceptio">error</prop>
+				<prop key="com.yellowcong.exception.ChannelException">error</prop>
+				<prop key="com.yellowcong.exception.GroupException">error</prop>
+				<prop key="com.yellowcong.exception.RoleException">error</prop>
+			 -->
+			</props>
+		</property>
+	</bean>
+</beans>

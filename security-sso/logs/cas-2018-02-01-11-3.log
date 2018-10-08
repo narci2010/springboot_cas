@@ -1,0 +1,6 @@
+[32m2018-02-01 11:49:57,231 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Configuration directory [\etc\cas\config] is not a directory or cannot be found at the specific path>[m
+[32m2018-02-01 11:49:57,288 INFO [org.apereo.cas.configuration.config.CasCoreBootstrapStandaloneConfiguration] - <Found and loaded [0] setting(s) from [\etc\cas\config]>[m
+[32m2018-02-01 11:49:57,293 INFO [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration] - <Located property source: PropertiesPropertySource {name='standaloneCasConfigService'}>[m
+[32m2018-02-01 11:49:57,319 INFO [org.apereo.cas.web.CasWebApplication] - <The following profiles are active: standalone>[m
+[32m2018-02-01 11:49:57,492 INFO [org.apereo.cas.web.CasWebApplicationContext] - <Refreshing CasWebApplicationContext>[m
+[32m2018-02-01 11:50:26,938 INFO [org.apereo.cas.configuration.support.Beans] - <Ticket registry encryption/signing is turned off. This MAY NOT be safe in a clustered production environment. Consider using other choices to handle encryption, signing and verification of ticket registry tickets, and verify the chosen ticket registry does support this behavior.>[m
