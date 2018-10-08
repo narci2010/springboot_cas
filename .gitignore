@@ -1,4 +1,6 @@
 target/
+.war
+.jar
 
 ### STS ###
 .apt_generated
